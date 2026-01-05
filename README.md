@@ -15,7 +15,8 @@ Decryption: To decrypt, the letters are shifted in the opposite direction by the
 # Code Walkthrough
 The encryption function shifts each letter of the plaintext by a specified number of positions (shift value) in the alphabet:
 
-def caesar_encrypt(text, shift):
+
+''' def caesar_encrypt(text, shift):
     encrypted = ""
     for char in text:
         if char.isalpha():
@@ -23,4 +24,4 @@ def caesar_encrypt(text, shift):
             encrypted += chr((ord(char) - shift_base + shift) % 26 + shift_base)
         else:
             encrypted += char
-    return encrypted
+    return encrypted '''
